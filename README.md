@@ -111,4 +111,4 @@
 
 ### Проектирование структуры приложения
 #### Алгоритм добавления устройства в систему:
-![image1](
+![image1](https://github.com/AlexSterlev/OTUS_SA_2024/blob/main/add_device.png)
