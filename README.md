@@ -112,3 +112,7 @@
 ### Проектирование структуры приложения
 #### Алгоритм добавления устройства в систему:
 ![image1](https://github.com/AlexSterlev/OTUS_SA_2024/blob/main/add_device.png)
+#### Контекст-диаграмма (System context):
+![image2](https://github.com/AlexSterlev/OTUS_SA_2024/blob/main/DiagComponent.png)
+#### Компонент-диаграмма (Component):
+![image3](https://github.com/AlexSterlev/OTUS_SA_2024/blob/main/DiagComponent2.png)
