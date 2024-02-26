@@ -120,8 +120,7 @@
 ![image4](https://github.com/AlexSterlev/OTUS_SA_2024/blob/main/BD_diag.jpg)
 #### Описание таблиц Базы Данных
 #### Примеры работы запросов Базы данных:
-Например из сервиса приходит запрос с логином и паролем. по такому запросу, мы можем получить данные сотрудника, который авторизовался.
-Так же мы получим его *accountId*, который уже в другие запросы сможем передавать.
+- Например из сервиса приходит запрос с логином и паролем. по такому запросу, мы можем получить данные сотрудника, который авторизовался. Так же мы получим его *accountId*, который уже в другие запросы сможем передавать.
 ```SQL
 select employees.description, position.description, account.idaccount
   from employees
@@ -131,4 +130,18 @@ select employees.description, position.description, account.idaccount
    and (employees.DateEndWork >= now() or employees.DateEndWork is null)
    and account.password = md5('vozduhonelove')
    and account.login = 'vozdushniyca'
+```
+- После успешной авторизации, мы получаем список приложений доступные этому аккаунту, по аккаунту получаем данные сотрудника, его должность; По должности получаем список ролей, по ролям получаем список доступных для роли приложений.
+```SQL
+select Applications.Description
+  from account
+  	   inner join employees on employees.idemployee = account.idemployee
+       inner join RolesLinkPosition on RolesLinkPosition.idposition = employees.idposition
+	   inner join RolesLinkApplications on RolesLinkApplications.IdRoles = RolesLinkPosition.IdRoles
+	   inner join Applications on Applications.IdApplications = RolesLinkApplications.IdApplications
+ where account.idaccount = 3
+   and employees.DateBeginWork <= now() 
+   and (employees.DateEndWork >= now() or employees.DateEndWork is null)
+   and RolesLinkPosition.IsDeleted = 0
+order by Applications.IdApplications
 ```
