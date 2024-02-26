@@ -145,3 +145,14 @@ select Applications.Description
    and RolesLinkPosition.IsDeleted = 0
 order by Applications.IdApplications
 ```
+- Далее мы перешли в приложение управление плейлистами, в таблице аккаунта у нас хранится id сотрудника, по нему получаем список ему присвоенных устройств, а так же адреса и атрибуты устройств для дальнейшего отображения в личном кабинете.
+```SQL
+select DeviceGroup.GroupName, DeviceList.DeviceName, DeviceList.IPAddress, DeviceList.OtherText
+  from account
+	   inner join Responsible on Responsible.idemployee = account.idemployee
+	   inner join DeviceGroup on DeviceGroup.IdGroupDevice = Responsible.IdGroupDevice
+	   inner join DeviceList on DeviceList.IdDevice = Responsible.IdDevice
+ where account.idaccount = 3
+   and Responsible.IsDeleted = 0
+ order by DeviceGroup.IdGroupDevice, DeviceList.IdDevice
+```
