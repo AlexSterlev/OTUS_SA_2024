@@ -116,3 +116,7 @@
 ![image2](https://github.com/AlexSterlev/OTUS_SA_2024/blob/main/DiagComponent.png)
 #### Компонент-диаграмма (Component):
 ![image3](https://github.com/AlexSterlev/OTUS_SA_2024/blob/main/DiagComponent2.png)
+#### Разработка базы данных для функционирования сервиса:
+![image3](https://github.com/AlexSterlev/OTUS_SA_2024/blob/main/BD_diag.png)
+#### Описание таблиц Базы Данных
+#### Примеры работы запросов Базы данных:
