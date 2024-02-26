@@ -122,7 +122,7 @@
 #### Примеры работы запросов Базы данных:
 Например из сервиса приходит запрос с логином и паролем. по такому запросу, мы можем получить данные сотрудника, который авторизовался.
 Так же мы получим его *accountId*, который уже в другие запросы сможем передавать.
-```
+```SQL
 select employees.description, position.description, account.idaccount
   from employees
        inner join account on account.idemployee = employees.idemployee
