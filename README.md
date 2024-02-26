@@ -122,11 +122,13 @@
 #### Примеры работы запросов Базы данных:
 Например из сервиса приходит запрос с логином и паролем. по такому запросу, мы можем получить данные сотрудника, который авторизовался.
 Так же мы получим его *accountId*, который уже в другие запросы сможем передавать.
-`select employees.description, position.description, account.idaccount
+```
+select employees.description, position.description, account.idaccount
   from employees
        inner join account on account.idemployee = employees.idemployee
 	   inner join position on position.idposition = employees.idposition
  where employees.DateBeginWork <= now()
    and (employees.DateEndWork >= now() or employees.DateEndWork is null)
    and account.password = md5('vozduhonelove')
-   and account.login = 'vozdushniyca'`
+   and account.login = 'vozdushniyca'
+```
