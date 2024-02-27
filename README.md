@@ -165,3 +165,4 @@ select DeviceGroup.GroupName, DeviceList.DeviceName, DeviceList.IPAddress, Devic
    and Responsible.IsDeleted = 0
  order by DeviceGroup.IdGroupDevice, DeviceList.IdDevice
 ```
+### Примеры прототипов интерфейсов:
