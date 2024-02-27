@@ -165,4 +165,16 @@ select DeviceGroup.GroupName, DeviceList.DeviceName, DeviceList.IPAddress, Devic
    and Responsible.IsDeleted = 0
  order by DeviceGroup.IdGroupDevice, DeviceList.IdDevice
 ```
-### Примеры прототипов интерфейсов:
+### Примеры прототипов интерфейсов.
+#### Окно авторизации пользователя:
+![image5](https://github.com/AlexSterlev/OTUS_SA_2024/blob/main/Login.jpg)
+#### Набор инструментов пользователей предоставляемый в зависимости от роли:
+![image6](https://github.com/AlexSterlev/OTUS_SA_2024/blob/main/Apps.jpg)
+#### Интерфейс управления плейлистами:
+![image7](https://github.com/AlexSterlev/OTUS_SA_2024/blob/main/Management_playlist.jpg)
+#### Интерфейс формирования плейлистов для дальнейшей загрузки на устройство или группу устройств:
+![image8](https://github.com/AlexSterlev/OTUS_SA_2024/blob/main/Create_Playlist.jpg)
+#### Интерфейс контент менеджера:
+![image9](https://github.com/AlexSterlev/OTUS_SA_2024/blob/main/interface_manager.jpg)
+#### Интерфейс специалиста технической потдержки:
+![image10](https://github.com/AlexSterlev/OTUS_SA_2024/blob/main/Interface_it.jpg)
