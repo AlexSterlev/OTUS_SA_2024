@@ -186,14 +186,14 @@ select DeviceGroup.GroupName, DeviceList.DeviceName, DeviceList.IPAddress, Devic
 
 #### Разработка API для управления воспроизведением 
 
-* POST/playback/play
-* POST/playback/pause
-* POST/playback/stop
-* POST/playback/skip
-* GET/playback/status
-* POST/playback/playlist/add
-* POST/playback/playlist/remove
-* GET/playback/playlist
+* POST/playback/play - Начать воспроизведение
+* POST/playback/pause - Приостоновить воспроизведение
+* POST/playback/stop - Остановить вомпроизведение
+* POST/playback/skip - Пропустить трек
+* GET/playback/status - Статус воспроизведения
+* POST/playback/playlist/add - Добавить плейлист
+* POST/playback/playlist/remove - Удалить плейлист
+* GET/playback/playlist - Запрос плейлиста
 
 ```YAML
 openapi: 3.0.0
