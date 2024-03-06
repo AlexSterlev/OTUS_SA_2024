@@ -185,6 +185,7 @@ select DeviceGroup.GroupName, DeviceList.DeviceName, DeviceList.IPAddress, Devic
 ![image10](https://github.com/AlexSterlev/OTUS_SA_2024/blob/main/Interface_it.jpg)
 
 #### Разработка API для управления воспроизведением 
+
 ```YAML
 openapi: 3.0.0
 info:
