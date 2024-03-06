@@ -258,7 +258,7 @@ paths:
           description: Current playback status retrieved successfully
   /playback/playlist/add:
     post:
-      summary: Add a media file to the playlist
+      summary: Add  playlist
       security:
         - apiKey: []
       requestBody:
@@ -272,10 +272,10 @@ paths:
                   type: string
       responses:
         '200':
-          description: Media file added to playlist successfully
+          description: playlist added  successfully
   /playback/playlist/remove:
     post:
-      summary: Remove a media file from the playlist
+      summary: Remove playlist file  
       security:
         - apiKey: []
       requestBody:
@@ -289,7 +289,7 @@ paths:
                   type: string
       responses:
         '200':
-          description: Media file removed from playlist successfully
+          description: playlist removed successfully
   /playback/playlist:
     get:
       summary: Retrieve the current playlist
