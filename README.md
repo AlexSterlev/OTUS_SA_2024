@@ -183,3 +183,109 @@ select DeviceGroup.GroupName, DeviceList.DeviceName, DeviceList.IPAddress, Devic
 ![image9](https://github.com/AlexSterlev/OTUS_SA_2024/blob/main/interface_manager.jpg)
 #### Интерфейс специалиста технической потдержки:
 ![image10](https://github.com/AlexSterlev/OTUS_SA_2024/blob/main/Interface_it.jpg)
+
+#### Разработка API для управления воспроизведением 
+```YAML
+openapi: 3.0.0
+info:
+  title: Media Player Control API
+  version: '3.2'
+  description: REST API for controlling playback of a media player and API authorization.
+servers:
+  # Added by API Auto Mocking Plugin
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/SAN4EZSTERLEV/playback-control/3.2
+  - url: https://api.example.com/v3
+    description: Production server
+  - url: https://api.staging.example.com/v3
+    description: Staging server
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: Authorization
+paths:
+  /playback/play:
+    post:
+      summary: Start playback
+      security:
+        - apiKey: []
+      responses:
+        '200':
+          description: Playback started successfully
+  /playback/pause:
+    post:
+      summary: Pause playback
+      security:
+        - apiKey: []
+      responses:
+        '200':
+          description: Playback paused successfully
+  /playback/stop:
+    post:
+      summary: Stop playback
+      security:
+        - apiKey: []
+      responses:
+        '200':
+          description: Playback stopped successfully
+  /playback/skip:
+    post:
+      summary: Skip to the next track
+      security:
+        - apiKey: []
+      responses:
+        '200':
+          description: Track skipped successfully
+  /playback/status:
+    get:
+      summary: Get the current playback status
+      security:
+        - apiKey: []
+      responses:
+        '200':
+          description: Current playback status retrieved successfully
+  /playback/playlist/add:
+    post:
+      summary: Add a media file to the playlist
+      security:
+        - apiKey: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                file_path:
+                  type: string
+      responses:
+        '200':
+          description: Media file added to playlist successfully
+  /playback/playlist/remove:
+    post:
+      summary: Remove a media file from the playlist
+      security:
+        - apiKey: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                file_path:
+                  type: string
+      responses:
+        '200':
+          description: Media file removed from playlist successfully
+  /playback/playlist:
+    get:
+      summary: Retrieve the current playlist
+      security:
+        - apiKey: []
+      responses:
+        '200':
+          description: Current playlist retrieved successfully
+```
