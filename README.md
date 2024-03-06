@@ -186,6 +186,15 @@ select DeviceGroup.GroupName, DeviceList.DeviceName, DeviceList.IPAddress, Devic
 
 #### Разработка API для управления воспроизведением 
 
+* POST/playback/play
+* POST/playback/pause
+* POST/playback/stop
+* POST/playback/skip
+* GET/playback/status
+* POST/playback/playlist/add
+* POST/playback/playlist/remove
+* GET/playback/playlist
+
 ```YAML
 openapi: 3.0.0
 info:
