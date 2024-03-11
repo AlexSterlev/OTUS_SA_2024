@@ -155,7 +155,7 @@
 - *Класс Setting:*
   Настройки имеют свойства, связанные с различными параметрами воспроизведения, такими как разрешение и частота кадров.
   Настройки связаны с рекламными панелями.
-![image5](https://github.com/AlexSterlev/OTUS_SA_2024/blob/main/Class-diag.jpg)
+![image5](https://github.com/AlexSterlev/OTUS_SA_2024/blob/main/Class-diag.png)
 <a name="proekt"><h3>Проектирование структуры приложения</h3></a>
 #### Алгоритм добавления устройства в систему:
 ![image1](https://github.com/AlexSterlev/OTUS_SA_2024/blob/main/add_device.png)
