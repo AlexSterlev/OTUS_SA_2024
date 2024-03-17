@@ -8,6 +8,7 @@
 - [Проектирование структуры приложения](#proekt)
 - [Примеры прототипов интерфейсов](#prototype)
 - [Разработка API для управления воспроизведением](#api)
+- [Acceptance Criteria для MVP](#mvp)
 
 <a name="busines"><h3>Бизнес требования к приложению</h3></a>
 #### Цели проекта:
@@ -343,3 +344,4 @@ paths:
         '200':
           description: Current playlist retrieved successfully
 ```
+<a name="mvp"><h3>Acceptance Criteria для MVP</h3></a>
