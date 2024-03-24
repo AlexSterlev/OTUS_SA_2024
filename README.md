@@ -74,24 +74,29 @@
 
 <a name="treb"><h2>Определение требований к системе</h2></a>
 #### Нефункциональные требования:
-<table><tr><th valign="top"><i>№</i></th><th valign="top"><i>Тема</i></th><th valign="top"><i>Требование</i></th><th valign="top"><i>Тип</i></th></tr>
-<tr><td rowspan="3" valign="top">1</td><td rowspan="3" valign="top"><i>Технологический стек</i></td><td valign="top"><i>Разработка backend на Python,</i></td><td valign="top"><i>Нефункциональное</i></td></tr>
-<tr><td valign="top"><i>Разработка front-end NODE, NEXT/React</i></td><td valign="top"><i>Нефункциональное</i></td></tr>
-<tr><td valign="top"><i>Связь между клиентом и сервером WireGuard</i> </td><td valign="top"><i>Нефункциональное</i></td></tr>
-<tr><td rowspan="4" valign="top">2</td><td rowspan="4" valign="top"><i>Безопасность</i></td><td valign="top"><i>Клиент должен взаимодействовать с сервером посредством протокола SSL</i></td><td valign="top"><i>Нефункциональное</i></td></tr>
-<tr><td valign="top"><i>Требуется двухфакторная аутентификация</i></td><td valign="top"><i>Нефункциональное</i></td></tr>
-<tr><td valign="top"><i>Отслеживание активности пользователя, при бездействии закрывать сессию с сохранением данных.</i></td><td valign="top"><i>Нефункциональное</i></td></tr>
-<tr><td valign="top"><i>Требуется шифровать межсервисный трафик</i></td><td valign="top"><i>Нефункциональное</i></td></tr>
-<tr><td valign="top">3</td><td rowspan="2" valign="top"><i>Совместимость</i></td><td valign="top"><p><i>Web-приложение должно поддерживать как мобильную версию для смартфонов, так и версию браузеров на ПК (Safari, Google Chrome, Яндекс Браузер, Mozila Firefox, Microsoft Edge, IE 11)</i></p><p></p></td><td valign="top"><i>Нефункциональное</i></td></tr>
-<tr><td valign="top">4</td><td valign="top"><p><i>Приложение должно обеспечивать передачу данных с использованием шифрования</i></p><p></p></td><td valign="top"><i>Нефункциональное</i></td></tr>
-<tr><td valign="top">5</td><td rowspan="2" valign="top"><i>Масштабируемость</i></td><td valign="top"><i>Решение должно поддерживать ежегодный рост на 30% новых терминалов</i></td><td valign="top"><i>Нефункциональное</i></td></tr>
-<tr><td valign="top">6</td><td valign="top"><p><i>Решение должно поддерживать ежегодный рост на 25% от предыдущего количества транзакций.</i></p><p></p></td><td valign="top"><i>Нефункциональное</i></td></tr>
-<tr><td valign="top">7</td><td valign="top"><i>Поддерживаемость:</i></td><td valign="top"><i>Обязательное логирование поведения приложения, авторизация пользователей, контроль учётных записей.</i></td><td valign="top"><i>Нефункциональное</i></td></tr>
-<tr><td valign="top">8</td><td valign="top"><i>Требования к модульности приложения:</i></td><td valign="top"><i>Инфраструктура, поддерживающая сервис должна состоять из следующих модулей: БД, сервер приложений, клиентский веб интерфейс.</i></td><td valign="top"><i>Нефункциональное</i></td></tr>
-<tr><td valign="top">9</td><td rowspan="2" valign="top"><i>Производительность:</i></td><td valign="top"><i>Хранилище данных рассчитывается на 4гб на одно устройство</i></td><td valign="top"><i>Нефункциональное</i></td></tr>
-<tr><td valign="top">10</td><td valign="top"><i>Пиковое значение 200 подключённых устройств одновременно</i></td><td valign="top"><i>Нефункциональное</i></td></tr>
-<tr><td valign="top">12</td><td rowspan="2" valign="top"><i>Доступность:</i></td><td valign="top"><p><i>Сервис должен быть доступен 95% времени с территории РФ.</i></p><p></p></td><td valign="top"><i>Нефункциональное</i></td></tr>
-<tr><td valign="top">13</td><td valign="top"><i>Режим работы 24/7</i></td><td valign="top"><i>Нефункциональное</i></td></tr>
+<table><tr><th valign="top"><i>№</i></th><th valign="top"><i>Тема</i></th><th valign="top"><i>Требование</i></th><th valign="top"><i>Тип</i></th><th valign="top"><i>Комментарий</i></th></tr>
+<tr><td rowspan="3" valign="top"></td><td rowspan="3" valign="top"><i>Технологический стек</i></td><td valign="top"><i>Разработка backend на Python,</i></td><td valign="top"><i>Нефункциональное</i></td><td valign="top"></td></tr>
+<tr><td valign="top"><i>Разработка front-end NODE, NEXT/React</i></td><td valign="top"><i>Нефункциональное</i></td><td valign="top"></td></tr>
+<tr><td valign="top"><i>Связь между клиентом и сервером WireGuard</i> </td><td valign="top"><i>Нефункциональное</i></td><td valign="top"></td></tr>
+<tr><td rowspan="4" valign="top"></td><td rowspan="4" valign="top"><i>Безопасность</i></td><td valign="top"><i>Клиент должен взаимодействовать с сервером посредством протокола SSL</i></td><td valign="top"><i>Нефункциональное</i></td><td valign="top"></td></tr>
+<tr><td valign="top"><i>Требуется двухфакторная аутентификация</i></td><td valign="top"><i>Нефункциональное</i></td><td valign="top"></td></tr>
+<tr><td valign="top"><i>Отслеживание активности пользователя, при бездействии закрывать сессию с сохранением данных.</i></td><td valign="top"><i>Нефункциональное</i></td><td valign="top"></td></tr>
+<tr><td valign="top"><i>Требуется шифровать межсервисный трафик</i></td><td valign="top"><i>Нефункциональное</i></td><td valign="top"></td></tr>
+<tr><td valign="top"></td><td rowspan="2" valign="top"><i>Совместимость</i></td><td valign="top"><p><i>Веб  приложение должно поддерживать как мобильную версию для смартфонов, так и версию браузеров на ПК (Safari, Google Chrome, Яндекс Браузер, Mozila Firefox, Microsoft Edge, IE 11)</i></p><p></p></td><td valign="top"><i>Нефункциональное</i></td><td valign="top"></td></tr>
+<tr><td valign="top"></td><td valign="top"><p><i>Приложение должно обеспечивать передачу данных с использованием шифрования</i></p><p></p></td><td valign="top"><i>Нефункциональное</i></td><td valign="top"></td></tr>
+<tr><td valign="top"></td><td rowspan="2" valign="top"><i>Масштабируемость</i></td><td valign="top"><i>Решение должно поддерживать ежегодный рост на 30% новых терминалов</i></td><td valign="top"><i>Нефункциональное</i></td><td valign="top"></td></tr>
+<tr><td valign="top"></td><td valign="top"><p><i>Решение должно поддерживать ежегодный рост на 25% от предыдущего количества транзакций.</i></p><p></p></td><td valign="top"><i>Нефункциональное</i></td><td valign="top"></td></tr>
+<tr><td valign="top"></td><td valign="top"><i>Поддерживаемость:</i></td><td valign="top"><i>Обязательное логирование поведения приложения, авторизация пользователей, контроль учётных записей.</i></td><td valign="top"><i>Нефункциональное</i></td><td valign="top"></td></tr>
+<tr><td valign="top"></td><td valign="top"><i>Требования к модульности приложения:</i></td><td valign="top"><i>Инфраструктура поддерживающая сервис должна состоять из следующих модулей: БД, сервер приложений, клиентский веб интерфейс.</i></td><td valign="top"><i>Нефункциональное</i></td><td valign="top"></td></tr>
+<tr><td rowspan="7" valign="top"></td><td rowspan="7" valign="top"><i>Производительность:</i></td><td valign="top"><i>Хранилище данных рассчитывается на 4гб на одно устройство</i></td><td rowspan="7" valign="top"><i>Нефункциональное</i></td><td rowspan="7" valign="top"></td></tr>
+<tr><td valign="top"><i>Среднее время загрузки главной страницы сайта не должно превышать 3 секунды при использовании стандартного интернет-соединения.</i></td></tr>
+<tr><td valign="top"><i>Сайт должен обеспечивать достаточную пропускную способность для поддержания стабильной работы при одновременном обслуживании 30 пользователей</i></td></tr>
+<tr><td valign="top"><i>Время отклика интерфейса должно быть менее 0.5 секунды для основных действий пользователя, таких как переход по ссылкам или отправка форм.</i></td></tr>
+<tr><td valign="top"><i>Пиковое значение 200 подключённых устройств одновременно</i></td></tr>
+<tr><td valign="top"><p><i>Сервис должен быть доступен 95% времени с территории РФ.</i></p><p></p></td></tr>
+<tr><td valign="top"><i>Режим работы 24/7</i></td></tr>
+<tr><td valign="top"></td><td rowspan="2" valign="top"><i>Доступность:</i></td><td valign="top"></td><td valign="top"><i>Нефункциональное</i></td><td valign="top"></td></tr>
+<tr><td valign="top"></td><td valign="top"></td><td valign="top"><i>Нефункциональное</i></td><td valign="top"></td></tr>
 </table>
 
 #### MVP:
