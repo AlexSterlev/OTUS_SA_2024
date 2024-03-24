@@ -90,8 +90,9 @@
 <tr><td valign="top">8</td><td valign="top"><i>Требования к модульности приложения:</i></td><td valign="top"><i>Инфраструктура, поддерживающая сервис должна состоять из следующих модулей: БД, сервер приложений, клиентский веб интерфейс.</i></td><td valign="top"><i>Нефункциональное</i></td></tr>
 <tr><td valign="top">9</td><td rowspan="2" valign="top"><i>Производительность:</i></td><td valign="top"><i>Хранилище данных рассчитывается на 4гб на одно устройство</i></td><td valign="top"><i>Нефункциональное</i></td></tr>
 <tr><td valign="top">10</td><td valign="top"><i>Пиковое значение 200 подключённых устройств одновременно</i></td><td valign="top"><i>Нефункциональное</i></td></tr>
-<tr><td valign="top">11</td><td rowspan="2" valign="top"><i>Доступность:</i></td><td valign="top"><p><i>Сервис должен быть доступен 95% времени с территории РФ.</i></p><p></p></td><td valign="top"><i>Нефункциональное</i></td></tr>
-<tr><td valign="top">12</td><td valign="top"><i>Режим работы 24/7</i></td><td valign="top"><i>Нефункциональное</i></td></tr>
+<tr><td valign="top">11</td><td valign="top"><i>Пиковое значение 200 подключённых устройств одновременно</i></td><td valign="top"><i>Нефункциональное</i></td></tr>
+<tr><td valign="top">12</td><td rowspan="2" valign="top"><i>Доступность:</i></td><td valign="top"><p><i>Сервис должен быть доступен 95% времени с территории РФ.</i></p><p></p></td><td valign="top"><i>Нефункциональное</i></td></tr>
+<tr><td valign="top">13</td><td valign="top"><i>Режим работы 24/7</i></td><td valign="top"><i>Нефункциональное</i></td></tr>
 </table>
 
 #### MVP:
